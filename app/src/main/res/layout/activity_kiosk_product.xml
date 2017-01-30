@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kiosk_selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#ebeaf0"
+    tools:context="com.example.samsung.woonebo_android.activity.KioskProductActivity">
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What are you looking for?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/textlines"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        ></TextView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/webView" />
+
+    <ListView
+        android:id="@+id/kioskData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transcriptMode="normal"
+        android:layout_margin="10dp"
+        android:background="@color/colorWhite"
+        android:animateLayoutChanges="true"></ListView>
+</LinearLayout>

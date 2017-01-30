@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    android:id="@+id/LinearLayoutItem">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/productBitmap"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#000000"></TextView>
+
+            <TextView
+                android:id="@+id/productDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dip"
+                android:textColor="#000000"></TextView>
+
+            <TextView android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:textColor="#F44336"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/linear1">
+
+        <Button
+            android:id="@+id/productRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ebeaf0"
+            android:minHeight="6dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="REMOVE FROM CART"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:focusable="false"/>
+
+        <Button
+            android:id="@+id/productUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ebeaf0"
+            android:minHeight="6dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Proceed to checkout"
+            android:focusable="false"/>
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/CheckBoxSelected"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dip"-->
+        <!--android:focusable="false"-->
+        <!--android:clickable="false"></CheckBox>-->
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".activity.MainActivity">
+
+    <item
+        android:id="@+id/basket"
+        android:icon="@drawable/basket"
+        android:orderInCategory="2"
+        android:title="basket"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/logout"
+        android:title="LogOut"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menu_01"
+        android:title="Your Orders"/>
+
+    <item
+        android:id="@+id/menu_02"
+        android:title="Your Lists"/>
+
+    <item
+        android:id="@+id/menu_03"
+        android:title="Your Accounts"/>
+</menu>
